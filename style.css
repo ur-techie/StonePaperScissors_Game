@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+  }
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #010a14;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+
+  footer{
+    background-color: rgb(10, 22, 48);
+    color: aliceblue;
+    margin-top: 50px;
+    text-align: center;
+    row-gap: 10px; 
+}
+footer ul{
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+.footer-icons a{
+    background-color: rgb(18, 37, 58);
+    color: whitesmoke;
+    margin-left: 10px; 
+    margin-top: 50px;
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px white , -2px -2px 5px white; 
+    
+}  
+.footer-icons a:hover{
+    background-color: rgb(28, 4, 84);
+    color: white;
+    text-decoration: underline;
+} 
+footer p a{
+    color: aliceblue;
+    text-decoration: none;
+} 
+footer p a:hover{
+    color: rgb(55, 116, 202);
+    text-decoration: underline;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 600px) {
+  .choices {
+    flex-direction: column;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 1.5rem;
+  }
+
+  .msg-container {
+    margin-top: 2rem;
+  }
+  #msg{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  footer{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .choice {
+    height: 100px;
+    width: 100px;
+  }
+  
+  img {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .score-board {
+    font-size: 1.2rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 2.5rem;
+  }
+  
+  .msg-container {
+    margin-top: 1rem;
+  }
+  #msg{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  footer{
+    margin-top: 40px;
+    row-gap: 5px; 
+  }
+}
+
